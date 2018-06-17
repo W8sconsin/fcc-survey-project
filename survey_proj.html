@@ -6,44 +6,70 @@
 	  <meta name="keywords" content="HTML,CSS,XML,JavaScript,survey">
 	  <meta name="author" content="Bill Bragg">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Survey</title>
 	  <link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<form>
+		<h1 id="title">Survey</h1>
+		<p id="description">This is where a survey description should go.</p>
+		<form id="survey-form" action="thanks.html">
 			<div class="content">
-				<div class="left column">
-					<ul class="labels">
-						<li class="label">
-							<label for="first-name">First Name</label>
-						</li>
-						<li class="label">
-							<label for="last-name">Last Name</label>
-						</li>
-						<li class="label">
-							<label for="language">Language</label>
-						</li>
-					</ul>
-				</div>
-				<div class="gutter"></div>
-				<div class="right column">
-					<ul class="answers">
-						<li class="answer">
-							<input class="first-name" type="text">
-						</li>
-						<li class="answer">
-							<input class="last-name" type="text">
-						</li>
-						<li class="answer">
-							<select name="language">
-							  <option value="english">English</option>
-							  <option value="spanish">Spanish</option>
-							</select>
-						</li>
-					</ul>
-				</div>
+				<ul class="answers">
+					<li class="answer">
+						<label id="name-label" for="name">Name:</label>
+						<input id="name" type="text" placeholder="Name"required>
+					</li>
+					<li class="answer">
+						<label id="email-label" for="email">Email Address:</label>
+						<input id="email" placeholder="Email" placeholder="sophie@example.com" type="email" required>
+					</li>
+					<li class="answer">
+						<label id="number-label" for="number">Number (0-100):</label>
+						<input id="number" placeholder="#" type="number" min="0" max="100" pattern="\d+"required>
+					</li>
+					<li class="answer">
+						<label id="comments-label" for="commments">Comments:</label>
+						<textarea height="20" width="100"></textarea>
+					</li>
+					<li class="answer" required>
+						<label id="language-label" for="language">Language:</label>
+						<select name="language" id="dropdown">
+						  <option value="english">English</option>
+						  <option value="spanish">Spanish</option>
+						</select>
+					</li>
+					<li class="answer">
+						<label id="choices-label" for="choices">Choices:</label>
+						<p>
+						<input id="choice1" name="choices" type="checkbox" value="choice1">Choice 1
+						</p>
+						<p>
+						<input id="choice2" name="choices" type="checkbox" value="choice1">Choice 2
+						</p>
+					</li>
+					<li class="answer">
+						<label id="gender-label" for="gender">Gender:</label>
+						<p>
+						<input id="male" name="gender" type="radio">
+						Male
+						</p>
+						<p>
+						<input id="female" name="gender" type="radio">
+						Female
+						</p>
+						<p>
+						<input id="other" name="gender" type="radio">
+						Non-Binary
+						</p>
+						<p>
+						<input id="non-binary" name="gender" type="radio">
+						Choose Not To Answer
+						</p>
+					</li>
+				</ul>
 			</div>
 			<div class="button-container">
-				<button>Submit Survey</button>
+				<input type="submit" name="Submit Survey" id="submit">
 			</div>
 		</form>
 	</body>

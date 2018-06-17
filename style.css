@@ -1,8 +1,16 @@
 li{
 	list-style: none;
+	padding: 1em;
 }
 ul{
 	-webkit-padding-start: 0;
+}
+#title{
+	width: 100%;
+	text-align: center;
+}
+#description,#thanks,#return-message{
+	text-align: center;
 }
 form{
 	padding: 1em;
@@ -10,22 +18,6 @@ form{
 .content{
 	display: flex;
 }
-.content .column {
-	width: 48%;
-	height: 300px;
-}
-.gutter{
-	width: 4%;
-}
-.content .right.column{
-	float: right;
-	text-align: left;
-}
-.content .left.column{
-	float: left;
-	text-align: right;
-}
-
 .button-container{
 	text-align: center;
 	width: 100%;
