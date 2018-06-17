@@ -1,0 +1,32 @@
+li{
+	list-style: none;
+}
+ul{
+	-webkit-padding-start: 0;
+}
+form{
+	padding: 1em;
+}
+.content{
+	display: flex;
+}
+.content .column {
+	width: 48%;
+	height: 300px;
+}
+.gutter{
+	width: 4%;
+}
+.content .right.column{
+	float: right;
+	text-align: left;
+}
+.content .left.column{
+	float: left;
+	text-align: right;
+}
+
+.button-container{
+	text-align: center;
+	width: 100%;
+}

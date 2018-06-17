@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="description" content="Survey">
+	  <meta name="keywords" content="HTML,CSS,XML,JavaScript,survey">
+	  <meta name="author" content="Bill Bragg">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<form>
+			<div class="content">
+				<div class="left column">
+					<ul class="labels">
+						<li class="label">
+							<label for="first-name">First Name</label>
+						</li>
+						<li class="label">
+							<label for="last-name">Last Name</label>
+						</li>
+						<li class="label">
+							<label for="language">Language</label>
+						</li>
+					</ul>
+				</div>
+				<div class="gutter"></div>
+				<div class="right column">
+					<ul class="answers">
+						<li class="answer">
+							<input class="first-name" type="text">
+						</li>
+						<li class="answer">
+							<input class="last-name" type="text">
+						</li>
+						<li class="answer">
+							<select name="language">
+							  <option value="english">English</option>
+							  <option value="spanish">Spanish</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="button-container">
+				<button>Submit Survey</button>
+			</div>
+		</form>
+	</body>
+</html>
